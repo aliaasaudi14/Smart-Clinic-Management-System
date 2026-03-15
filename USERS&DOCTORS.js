@@ -13,6 +13,7 @@ db.users.insertMany([
   { _id: 10, name: "Dr Laila", email: "laila@clinic.com", password: "Laila.Pass.99", role: "doctor" }
 ]);
 
+
 db.users.find()
 db.users.find({ role: "doctor" })
 
