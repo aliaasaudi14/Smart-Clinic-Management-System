@@ -45,7 +45,7 @@ db.doctors.aggregate([
   }
 ]);
 // ==========================================
-// 2-// Identify low-utilization doctors (Less than 3 patients)
+// 3-Identify low-utilization doctors (Less than 3 patients)
 // ==========================================
 db.doctors.aggregate([
   {
