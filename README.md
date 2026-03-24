@@ -5,7 +5,7 @@ A multi-doctor SaaS platform built on **MongoDB Atlas** for managing clinic appo
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-green?logo=mongodb)](https://cloud.mongodb.com)
 [![Status](https://img.shields.io/badge/Status-Complete-brightgreen)]()
 [![Collections](https://img.shields.io/badge/Collections-8-blue)]()
-[![Aggregations](https://img.shields.io/badge/Aggregations-14-orange)]()
+[![Aggregations](https://img.shields.io/badge/Aggregations-16-orange)]()
 
 ---
 
