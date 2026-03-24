@@ -101,56 +101,59 @@ db.getCollection("patients").insertMany([
 // ==========================================
 //  Appointments Collection
 // ==========================================
+// ==========================================
+// 3. Appointments Collection (Updated with new Patient ObjectIds)
+// ==========================================
 db.getCollection("appointments").insertMany([
+  // --- Dr Mohamed (doctor_id: ...538) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c056ef7cf28bd5e444152e"), day: "Sunday", time: "09:00", status: "booked" }, // Patient 21
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c056ef7cf28bd5e444152f"), day: "Sunday", time: "10:30", status: "booked" }, // Patient 22
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c05a007cf28bd5e4441592"), day: "Sunday", time: "09:45", status: "booked" }, // Patient 41
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c05a007cf28bd5e4441593"), day: "Tuesday", time: "11:15", status: "booked" }, // Patient 42
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c05a007cf28bd5e4441594"), day: "Thursday", time: "12:30", status: "booked" }, // Patient 43
 
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c035772314307484441521"), day: "Sunday", time: "09:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: ObjectId("69c035772314307484441522"), day: "Sunday", time: "10:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: 41, day: "Sunday", time: "09:45", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: 42, day: "Tuesday", time: "11:15", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), patient_id: 43, day: "Thursday", time: "12:30", status: "booked" },
+  // --- Dr Ahmed (doctor_id: ...539) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), patient_id: ObjectId("69c056ef7cf28bd5e4441530"), day: "Monday", time: "08:30", status: "booked" }, // Patient 23
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), patient_id: ObjectId("69c056ef7cf28bd5e4441531"), day: "Monday", time: "11:00", status: "booked" }, // Patient 24
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), patient_id: ObjectId("69c05a007cf28bd5e4441595"), day: "Monday", time: "10:00", status: "booked" }, // Patient 44
 
+  // --- Dr Sara (doctor_id: ...53a) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: ObjectId("69c056ef7cf28bd5e4441532"), day: "Sunday", time: "09:00", status: "booked" }, // Patient 25
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: ObjectId("69c056ef7cf28bd5e4441533"), day: "Sunday", time: "10:00", status: "booked" }, // Patient 26
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: ObjectId("69c05a007cf28bd5e4441596"), day: "Sunday", time: "10:00", status: "booked" }, // Patient 45
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: ObjectId("69c05a007cf28bd5e4441597"), day: "Wednesday", time: "13:00", status: "booked" }, // Patient 46
 
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), patient_id: ObjectId("69c035772314307484441523"), day: "Monday", time: "08:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), patient_id: ObjectId("69c035772314307484441524"), day: "Monday", time: "11:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), patient_id: 44, day: "Monday", time: "10:00", status: "booked" },
+  // --- Dr Mahmoud (doctor_id: ...53b) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153b"), patient_id: ObjectId("69c056ef7cf28bd5e4441534"), day: "Tuesday", time: "11:00", status: "booked" }, // Patient 27
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153b"), patient_id: ObjectId("69c056ef7cf28bd5e4441535"), day: "Tuesday", time: "01:00", status: "booked" }, // Patient 28
 
+  // --- Dr Ali (doctor_id: ...53c) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: ObjectId("69c056ef7cf28bd5e4441536"), day: "Thursday", time: "10:30", status: "booked" }, // Patient 29
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: ObjectId("69c056ef7cf28bd5e4441537"), day: "Thursday", time: "12:00", status: "booked" }, // Patient 30
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: ObjectId("69c05a007cf28bd5e4441598"), day: "Tuesday", time: "09:30", status: "booked" }, // Patient 47
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: ObjectId("69c05a007cf28bd5e4441599"), day: "Thursday", time: "11:00", status: "booked" }, // Patient 48
 
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: ObjectId("69c035772314307484441525"), day: "Sunday", time: "09:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: ObjectId("69c035772314307484441526"), day: "Sunday", time: "10:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: 45, day: "Sunday", time: "10:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), patient_id: 46, day: "Wednesday", time: "13:00", status: "booked" },
+  // --- Dr Fatma (doctor_id: ...53d) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), patient_id: ObjectId("69c056ef7cf28bd5e4441538"), day: "Monday", time: "09:30", status: "booked" }, // Patient 31
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), patient_id: ObjectId("69c056ef7cf28bd5e4441539"), day: "Monday", time: "11:45", status: "booked" }, // Patient 32
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), patient_id: ObjectId("69c05a007cf28bd5e444159a"), day: "Wednesday", time: "10:45", status: "booked" }, // Patient 49
 
+  // --- Dr Hassan (doctor_id: ...53e) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), patient_id: ObjectId("69c056ef7cf28bd5e444153a"), day: "Thursday", time: "08:30", status: "booked" }, // Patient 33
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), patient_id: ObjectId("69c056ef7cf28bd5e444153b"), day: "Thursday", time: "10:00", status: "booked" }, // Patient 34
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), patient_id: ObjectId("69c05a007cf28bd5e444159b"), day: "Monday", time: "11:30", status: "booked" }, // Patient 50
 
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153b"), patient_id: ObjectId("69c035772314307484441527"), day: "Tuesday", time: "11:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153b"), patient_id: ObjectId("69c035772314307484441528"), day: "Tuesday", time: "01:00", status: "booked" },
+  // --- Dr Mona (doctor_id: ...53f) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153f"), patient_id: ObjectId("69c056ef7cf28bd5e444153c"), day: "Wednesday", time: "11:00", status: "booked" }, // Patient 35
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153f"), patient_id: ObjectId("69c056ef7cf28bd5e444153d"), day: "Wednesday", time: "01:00", status: "booked" }, // Patient 36
 
+  // --- Dr Khaled (doctor_id: ...540) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441540"), patient_id: ObjectId("69c056ef7cf28bd5e444153e"), day: "Sunday", time: "10:30", status: "booked" }, // Patient 37
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441540"), patient_id: ObjectId("69c056ef7cf28bd5e444153f"), day: "Sunday", time: "12:00", status: "booked" }, // Patient 38
 
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: ObjectId("69c035772314307484441529"), day: "Thursday", time: "10:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: ObjectId("69c035772314307484441530"), day: "Thursday", time: "12:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: 47, day: "Tuesday", time: "09:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), patient_id: 48, day: "Thursday", time: "11:00", status: "booked" },
-
-
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), patient_id: ObjectId("69c035772314307484441531"), day: "Monday", time: "09:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), patient_id: ObjectId("69c035772314307484441532"), day: "Monday", time: "11:45", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), patient_id: 49, day: "Wednesday", time: "10:45", status: "booked" },
-
-
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), patient_id: ObjectId("69c035772314307484441533"), day: "Thursday", time: "08:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), patient_id: ObjectId("69c035772314307484441534"), day: "Thursday", time: "10:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), patient_id: 50, day: "Monday", time: "11:30", status: "booked" },
-
-
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153f"), patient_id: ObjectId("69c035772314307484441535"), day: "Wednesday", time: "11:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd44153f"), patient_id: ObjectId("69c035772314307484441536"), day: "Wednesday", time: "01:00", status: "booked" },
-
-
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441540"), patient_id: ObjectId("69c035772314307484441537"), day: "Sunday", time: "10:30", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441540"), patient_id: ObjectId("69c035772314307484441538"), day: "Sunday", time: "12:00", status: "booked" },
-
-
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), patient_id: ObjectId("69c035772314307484441539"), day: "Monday", time: "09:00", status: "booked" },
-    { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), patient_id: ObjectId("69c035772314307484441540"), day: "Monday", time: "10:30", status: "booked" }
+  // --- Dr Laila (doctor_id: ...541) ---
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), patient_id: ObjectId("69c056ef7cf28bd5e4441540"), day: "Monday", time: "09:00", status: "booked" }, // Patient 39
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), patient_id: ObjectId("69c056ef7cf28bd5e4441541"), day: "Monday", time: "10:30", status: "booked" }  // Patient 40
 ]);
 
 // ==========================================
@@ -926,6 +929,72 @@ db.rep_visits.insertMany([
     "visit_summary": { "samples": 1, "duration_min": 14, "discussion_topic": "Women’s health", "feedback": "Clinic cancelled" }
   }
 ]);
+
+// ==========================================
+//  Doctor Weekly Schedules (Schedules Collection)
+// ==========================================
+db.Schedules.insertMany([
+  // Doctor 1 → Sunday, Tuesday, Thursday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), day: "Sunday", patient_start_time: "08:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 20, max_reps: 5 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), day: "Tuesday", patient_start_time: "09:00", patient_end_time: "13:00", rep_start_time: "14:00", rep_end_time: "16:00", max_patients: 18, max_reps: 4 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441538"), day: "Thursday", patient_start_time: "10:00", patient_end_time: "14:00", rep_start_time: "15:00", rep_end_time: "17:00", max_patients: 15, max_reps: 3 },
+
+  // Doctor 2 → Monday, Wednesday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), day: "Monday", patient_start_time: "08:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 20, max_reps: 5 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441539"), day: "Wednesday", patient_start_time: "09:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 12, max_reps: 3 },
+
+  // Doctor 3 → Sunday, Monday, Wednesday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), day: "Sunday", patient_start_time: "08:30", patient_end_time: "11:30", rep_start_time: "12:00", rep_end_time: "14:00", max_patients: 25, max_reps: 6 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), day: "Monday", patient_start_time: "08:00", patient_end_time: "11:00", rep_start_time: "11:30", rep_end_time: "13:30", max_patients: 20, max_reps: 5 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153a"), day: "Wednesday", patient_start_time: "11:00", patient_end_time: "14:00", rep_start_time: "15:00", rep_end_time: "17:00", max_patients: 10, max_reps: 2 },
+
+  // Doctor 4 → Tuesday, Thursday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153b"), day: "Tuesday", patient_start_time: "10:00", patient_end_time: "14:00", rep_start_time: "15:00", rep_end_time: "17:00", max_patients: 15, max_reps: 3 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153b"), day: "Thursday", patient_start_time: "09:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 18, max_reps: 5 },
+
+  // Doctor 5 → Sunday, Tuesday, Thursday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), day: "Sunday", patient_start_time: "09:00", patient_end_time: "13:00", rep_start_time: "14:00", rep_end_time: "16:00", max_patients: 18, max_reps: 4 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), day: "Tuesday", patient_start_time: "08:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 16, max_reps: 4 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153c"), day: "Thursday", patient_start_time: "10:00", patient_end_time: "13:00", rep_start_time: "14:00", rep_end_time: "16:00", max_patients: 22, max_reps: 4 },
+
+  // Doctor 6 → Monday, Wednesday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), day: "Monday", patient_start_time: "09:00", patient_end_time: "13:00", rep_start_time: "14:00", rep_end_time: "16:00", max_patients: 18, max_reps: 4 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153d"), day: "Wednesday", patient_start_time: "08:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 20, max_reps: 5 },
+
+  // Doctor 7 → Sunday, Monday, Thursday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), day: "Sunday", patient_start_time: "08:00", patient_end_time: "11:00", rep_start_time: "11:30", rep_end_time: "13:30", max_patients: 20, max_reps: 5 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), day: "Monday", patient_start_time: "10:00", patient_end_time: "13:00", rep_start_time: "14:00", rep_end_time: "16:00", max_patients: 22, max_reps: 4 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153e"), day: "Thursday", patient_start_time: "08:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 20, max_reps: 5 },
+
+  // Doctor 8 → Tuesday, Wednesday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153f"), day: "Tuesday", patient_start_time: "09:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 18, max_reps: 5 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd44153f"), day: "Wednesday", patient_start_time: "10:00", patient_end_time: "14:00", rep_start_time: "15:00", rep_end_time: "17:00", max_patients: 15, max_reps: 3 },
+
+  // Doctor 9 → Sunday, Tuesday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441540"), day: "Sunday", patient_start_time: "10:00", patient_end_time: "13:00", rep_start_time: "14:00", rep_end_time: "16:00", max_patients: 22, max_reps: 4 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441540"), day: "Tuesday", patient_start_time: "08:00", patient_end_time: "11:00", rep_start_time: "11:30", rep_end_time: "13:30", max_patients: 20, max_reps: 5 },
+
+  // Doctor 10 → Monday, Wednesday, Thursday
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), day: "Monday", patient_start_time: "08:30", patient_end_time: "11:30", rep_start_time: "12:00", rep_end_time: "14:00", max_patients: 25, max_reps: 6 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), day: "Wednesday", patient_start_time: "09:00", patient_end_time: "12:00", rep_start_time: "13:00", rep_end_time: "15:00", max_patients: 12, max_reps: 3 },
+  { doctor_id: ObjectId("69b80bbcc8dadb5abd441541"), day: "Thursday", patient_start_time: "11:00", patient_end_time: "14:00", rep_start_time: "15:00", rep_end_time: "17:00", max_patients: 10, max_reps: 2 }
+]);
+
+// ==========================================
+//  Specific Clinic Exceptions (clinic_days Collection)
+// ==========================================
+db.clinic_days.insertMany([
+  { date: ISODate("2025-01-01"), is_open: false, reason: "New Year's Day", doctor_id: ObjectId("69b80bbcc8dadb5abd441538") },
+  { date: ISODate("2025-01-07"), is_open: false, reason: "Coptic Christmas", doctor_id: ObjectId("69b80bbcc8dadb5abd441539") },
+  { date: ISODate("2025-04-20"), is_open: false, reason: "Easter Sunday", doctor_id: ObjectId("69b80bbcc8dadb5abd44153a") },
+  { date: ISODate("2025-06-30"), is_open: false, reason: "Clinic Annual Maintenance", doctor_id: ObjectId("69b80bbcc8dadb5abd44153b") },
+  { date: ISODate("2025-07-23"), is_open: false, reason: "Revolution Day", doctor_id: ObjectId("69b80bbcc8dadb5abd44153c") },
+  { date: ISODate("2025-03-10"), is_open: false, reason: "Doctor on Leave", doctor_id: ObjectId("69b80bbcc8dadb5abd44153d") },
+  { date: ISODate("2025-05-15"), is_open: false, reason: "Emergency Closure", doctor_id: ObjectId("69b80bbcc8dadb5abd44153e") },
+  { date: ISODate("2025-08-10"), is_open: false, reason: "Public Holiday", doctor_id: ObjectId("69b80bbcc8dadb5abd44153f") },
+  { date: ISODate("2025-09-22"), is_open: false, reason: "Clinic Maintenance", doctor_id: ObjectId("69b80bbcc8dadb5abd441540") },
+  { date: ISODate("2025-11-05"), is_open: false, reason: "Doctor on Leave", doctor_id: ObjectId("69b80bbcc8dadb5abd441541") }
+]);
 // ==========================================
 // Database Commands
 // ==========================================
@@ -934,3 +1003,4 @@ db.patients.find();
 db.doctors.find();
 db.Schedules.find();
 db.appointments.find();
+db.rep_visits.find();
