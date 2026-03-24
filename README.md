@@ -3,9 +3,9 @@
 A multi-doctor SaaS platform built on **MongoDB Atlas** for managing clinic appointments, medical rep visits, and doctor schedules.
 
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-green?logo=mongodb)](https://cloud.mongodb.com)
-[![Status](https://img.shields.io/badge/Status-Complete-brightgreen)]()
 [![Collections](https://img.shields.io/badge/Collections-8-blue)]()
 [![Aggregations](https://img.shields.io/badge/Aggregations-16-orange)]()
+[![Status](https://img.shields.io/badge/Status-Complete-brightgreen)]()
 
 ---
 
@@ -15,7 +15,7 @@ This project is a **Clinic Management System** built using **MongoDB Atlas**, de
 
 The system demonstrates:
 - ✅ Data Modeling — Embedded & Referenced relationships
-- ✅ Aggregation Framework — 14 real-world queries
+- ✅ Aggregation Framework — 16 real-world queries
 - ✅ Business Logic — booking validation, scheduling conflicts
 - ✅ Multi-role Authentication — doctor, patient, medical rep, admin
 - ✅ SaaS Architecture — multiple doctors on one platform
