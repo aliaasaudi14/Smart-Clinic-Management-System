@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏥 Clinic Management System (MongoDB Project)
 
 ## 📌 Overview
